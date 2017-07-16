@@ -37,7 +37,7 @@ public class FundTaskCollector extends TimerTask {
 	        while (iterator.hasNext()) {
 	            
 	        	Map.Entry me = (Map.Entry) iterator.next();
-	            System.out.println("Key: "+me.getKey() + " & Value: " + me.getValue());
+	            //System.out.println("Key: "+me.getKey() + " & Value: " + me.getValue());
 	            
 	        	LOGGER.info(currentTimestamp() + "///////////////////////////////////////////////////////////////////// " );
 	        	LOGGER.info(currentTimestamp() + " Fund collection starting.. " + me.getKey() );
