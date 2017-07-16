@@ -32,12 +32,21 @@ public class DataCollector {
 			
 			
 			String value = content.text();
+			//System.out.println("value : " + value);
+			
+			
 			//Start parsing values
 			Element siblingfirst = content.firstElementSibling();
+			
 			Element siblingsecond = content.nextElementSibling();
+			
+			
 			//Day and value
 			String first = siblingfirst.text();
 			String second = siblingsecond.text();
+			//System.out.println("sib1 : " + first);
+			//System.out.println("sib2 : " + second);
+			
 			
 			funds.put(first, second);
 			

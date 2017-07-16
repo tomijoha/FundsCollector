@@ -37,14 +37,22 @@ public class FundTaskCollector extends TimerTask {
 	        while (iterator.hasNext()) {
 	            
 	        	Map.Entry me = (Map.Entry) iterator.next();
-	            //System.out.println("Key: "+me.getKey() + " & Value: " + me.getValue());
+	            System.out.println("Key: "+me.getKey() + " & Value: " + me.getValue());
 	            
 	        	LOGGER.info(currentTimestamp() + "///////////////////////////////////////////////////////////////////// " );
 	        	LOGGER.info(currentTimestamp() + " Fund collection starting.. " + me.getKey() );
 				
 				fundsParameters = GetData.pageParser(me.getValue().toString());
 				
+				//Fix temp for manual day inserts
+				//String tmppvm = "2017-07-13";
+				
 				String dayValues = GetData.latestDayValues(me.getValue().toString());
+				
+				//Fix temp to get specific day value and updating it
+				//String dayvalue = fundsParameters.get(tmppvm);
+				//String tempvalue = dayvalue.replace(",", ".");
+				//String dayValues = tmppvm+"+"+tempvalue;
 				
 				LOGGER.info(currentTimestamp() + " Day value from web: " + dayValues + " :::: " + me.getKey());
 				

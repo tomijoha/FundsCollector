@@ -11,9 +11,9 @@ import java.util.logging.Logger;
 public class Database {
 
 	 
-	    private static final String url = "jdbc:mysql://localhost:3306/mysql";
+	    private static final String url = "jdbc:mysql://localhost:3306/funds?autoReconnect=true&useSSL=false";
 	    private static final String user = "root";
-	    private static final String password = "xxxxx";
+	    private static final String password = "xxxxxx";
 	    
 	    private static Logger LOGGER = Logger.getLogger("InfoLogging");
 		
