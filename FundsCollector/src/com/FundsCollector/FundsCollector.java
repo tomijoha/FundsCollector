@@ -43,6 +43,7 @@ public class FundsCollector {
 		HashMap<String, String> rahastot = new HashMap<String, String>();
 		
 		//Funds
+		//Needs to be updated with uusi.op.fi urls
 		//String testitaulu = "https://www.op.fi/op/henkiloasiakkaat/saastot-ja-sijoitukset/kurssit-ja-markkinat/markkinat?sym=101639284&id=32462&srcpl=3";
 		String OPKorkotuotto = "https://www.op.fi/op/henkiloasiakkaat/saastot-ja-sijoitukset/vakuutussaastamisen-kurssit?sym=42992016&id=39112&srcpl=3"; 
 		String OPDelta = "https://www.op.fi/op/henkiloasiakkaat/saastot-ja-sijoitukset/vakuutussaastamisen-kurssit?sym=18513219&id=39112&srcpl=3";
